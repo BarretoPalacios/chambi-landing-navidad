@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad Mágica 2024</title>
+    <style>
+        /* Estilos CSS */
+        :root {
+            --color-primary: #c41e3a;
+            --color-secondary: #228B22;
+            --color-background: #f0f0f0;
+            --color-text: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background: linear-gradient(to bottom, #ffe6e6, #e6ffe6);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #a51a2d;
+        }
+
+        .countdown {
+            background-color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .countdown-item {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            min-width: 100px;
+        }
+
+        .countdown-item span {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .products {
+            padding: 4rem 0;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+        }
+
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--color-primary);
+        }
+
+        .testimonial-nav.prev {
+            left: 10px;
+        }
+
+        .testimonial-nav.next {
+            right: 10px;
+        }
+
+        footer {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .countdown-container {
+                flex-wrap: wrap;
+            }
+
+            .countdown-item {
+                min-width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>¡Feliz Navidad 2024!</h1>
+                <p>Descubre la magia de estas fiestas con nuestras ofertas especiales</p>
+                <a href="#productos" class="btn">Ver Ofertas Navideñas</a>
+            </div>
+        </section>
+
+        <section class="countdown">
+            <div class="container">
+                <h2>Cuenta regresiva para Navidad</h2>
+                <div class="countdown-container" id="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <p>Días</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <p>Horas</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="products">
+            <div class="container">
+                <h2>Productos Destacados</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyTMJ6AJ_lWOvB4XqGvxIsBYvJuwvNo2nP3g&s" alt="Producto 1">
+                        <div class="product-info">
+                            <h3>Producto Navideño 1</h3>
+                            <p>Descripción breve del producto...</p>
+                            <a href="#" class="btn">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA-xRlE7Y_FGKYBtK-lSw-ggDgK-iObHpnUQ&s" alt="Producto 2">
+                        <div class="product-info">
+                            <h3>Producto Navideño 2</h3>
+                            <p>Descripción breve del producto...</p>
+                            <a href="#" class="btn">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://http2.mlstatic.com/D_Q_NP_795485-MLU73664382446_012024-O.webp" alt="Producto 3">
+                        <div class="product-info">
+                            <h3>Producto Navideño 3</h3>
+                            <p>Descripción breve del producto...</p>
+                            <a href="#" class="btn">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="testimonials">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonial-card" id="testimonial">
+                    <p id="testimonial-text"></p>
+                    <p id="testimonial-author"></p>
+                    <button class="testimonial-nav prev" onclick="changeTestimonial(-1)">&lt;</button>
+                    <button class="testimonial-nav next" onclick="changeTestimonial(1)">&gt;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@navidad2024.com</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Navidad Mágica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para la cuenta regresiva
+        function updateCountdown() {
+            const christmas = new Date('December 25, 2024 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = christmas - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // JavaScript para los testimonios
+        const testimonials = [
+            { text: "¡Los regalos llegaron a tiempo y perfectamente envueltos!", author: "María García" },
+            { text: "Excelente selección de productos navideños. ¡Volveré a comprar!", author: "Juan Pérez" },
+            { text: "El servicio al cliente fue excepcional durante toda la temporada.", author: "Ana Martínez" }
+        ];
+
+        let currentTestimonial = 0;
+
+        function updateTestimonial() {
+            const testimonial = testimonials[currentTestimonial];
+            document.getElementById('testimonial-text').textContent = testimonial.text;
+            document.getElementById('testimonial-author').textContent = `- ${testimonial.author}`;
+        }
+
+        function changeTestimonial(direction) {
+            currentTestimonial = (currentTestimonial + direction + testimonials.length) % testimonials.length;
+            updateTestimonial();
+        }
+
+        updateTestimonial();
+    </script>
+</body>
+</html>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
